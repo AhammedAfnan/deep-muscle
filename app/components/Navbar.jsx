@@ -3,9 +3,9 @@ import Link from "next/link";
 import { ShoppingCart, User } from "lucide-react";
 
 export default function Navbar() {
-  return (
-    <nav className="w-full bg-black shadow-md px-8 py-4">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+  return ( 
+    <nav className="w-[80%] mx-auto shadow-md px-8 py-4 bg-green-200 mt-4">
+      <div className="max-w-7xl mx-auto flex items-center justify-between ">
 
         {/* Left - Logo */}
         <Link href="/" className="text-2xl font-semibold text-white ${montserrat.className}">
@@ -21,11 +21,11 @@ export default function Navbar() {
 
         {/* Right - Icons */}
         <div className="flex items-center gap-6">
-          <Link href="/profile">
-            <User className="w-5 h-5 cursor-pointer text-white transition-colors" />
-          </Link>
           <Link href="/cart">
             <ShoppingCart className="w-5 h-5x cursor-pointer text-white transition-colors" />
+          </Link>
+          <Link href="/profile">
+            <User className="w-5 h-5 cursor-pointer text-white transition-colors" />
           </Link>
         </div>
 
